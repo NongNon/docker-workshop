@@ -5,7 +5,7 @@ ENV APP_PORT=5000
 WORKDIR /app
 COPY package.json /app
 RUN npm install
-# __Task-2: Set Expose port
+# __Task-2: copy code to container
 COPY . /app
 
 # __Task-3: Set Expose port
