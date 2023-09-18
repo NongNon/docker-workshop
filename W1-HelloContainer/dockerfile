@@ -1,0 +1,24 @@
+# INSTRUCTION arguments
+
+# FROM <image>:<tag>
+FROM ubuntu:latest
+
+## install python
+# RUN <command>
+RUN apt-get update && apt-get install -y python3
+
+## copy files to container
+# COPY <src> <dest>
+COPY hello.py /hello.py
+
+## set working directory
+# WORKDIR <path>
+WORKDIR /
+
+## set environment variable
+# ENV <key> <value>
+ENV COMPUTERNAME ubuntu-container
+
+## run command
+# CMD <command>
+CMD ["python3", "hello.py"]
