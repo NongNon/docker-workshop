@@ -21,6 +21,6 @@ print("OS: %s" % this_os)
 print("Python version: %s" % python_version)
 
 ## keep container running
-import time
-while True:
-    time.sleep(60)
+#import time
+#while True:
+#    time.sleep(60)
